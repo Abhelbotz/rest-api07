@@ -190,9 +190,9 @@ case 'maker_3d':
 Example Case:
 
 case 'sertifikat_ff':
-      if (args.length < 1) return reply(`Usage: ${prefix + command} teks\nExample : ${prefix + command} zeeoneofc)
+      if (args.length < 1) return reply(`Usage: ${prefix + command} teks\nExample : ${prefix + command} sadistic)
       teksnya = args.join(" ")
-      ini_result = await fetchJson(`api-alphabot.herokuapp.com/api/maker/special/epep?text=${teksnya}&apikey=Alphabot`}
+      ini_result = await fetchJson(`rest-api07.herokuapp.com/api/maker/special/epep?text=${teksnya}&apikey=Abhelbotz`}
       get_result = ini_result.result
          ini_img = await getBuffer(get_result.results)
       alpha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih kak hasilnya'})
@@ -210,9 +210,9 @@ case 'sertifikat_ff':
 Example Case:
 
 case 'coffe_cup':
-      if (args.length < 1) return reply(`Usage: ${prefix + command} teks\nExample : ${prefix + command} zeeoneofc)
+      if (args.length < 1) return reply(`Usage: ${prefix + command} teks\nExample : ${prefix + command} sadistic)
       teksnya = args.join(" ")
-      ini_result = await fetchJson(`https://percobaannih.herokuapp.com/api/textmaker/senja?text=${teksnya}&theme=coffee-cup&apikey=Alphabot`}
+      ini_result = await fetchJson(`https://percobaannih.herokuapp.com/api/textmaker/senja?text=${teksnya}&theme=coffee-cup&apikey=Abhelbotz`}
       get_result = ini_result.result
          ini_img = await getBuffer(get_result.url)
       alpha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih kak hasilnya'})
@@ -232,7 +232,7 @@ Example Case:
 case 'manga':
       if (args.length < 1) return reply(`Example : ${prefix + command} naruto`)
       query = args.join(" ")
-      var manga = await fetchJson('https://percobaannih.herokuapp.com/api/anime/kusonime?search=${query}&apikey=Alphabot')
+      var manga = await fetchJson('https://percobaannih.herokuapp.com/api/anime/kusonime?search=${query}&apikey=Abhelbotz')
       ini_result = manga.result
          ini_txt = `Title : ${ini_result.title}\n`
          ini_txt += `Title Japan : ${ini_result.title_jp}\n`
@@ -262,12 +262,11 @@ case 'manga':
 Example Case:
 
 case 'asupan_santuy':
-     ini_result = await fetchJson(`https://api-alphabot.herokuapp.com/api/asupan/santuy?apikey=Alphabot`)
+     ini_result = await fetchJson(`https://rest-api07.herokuapp.com/api/asupan/santuy?apikey=Abhelbotz`)
      get_result = ini_result.result
         ini_vid = await getBuffer(get_result.url)
      alpha.sendMessage(from, ini_vid, video, {mimetype: 'video/mp4',quoted:mek})
      break
-
 ```
 </Details>
 
@@ -281,7 +280,7 @@ case 'asupan_santuy':
 Example Case:
 
 case 'nsfw_ass':
-     ini_result = await fetchJson(`https://api-alphabot.herokuapp.com/api/nsfw/ass?apikey=Alphabot`)
+     ini_result = await fetchJson(`https://rest-api07.herokuapp.com/api/nsfw/ass?apikey=Abhelbotz`)
      get_result = ini_result.result
         ini_img = await getBuffer(get_result)
      alpha.sendMessage(from, ini_img, image, {quoted:mek})
@@ -314,7 +313,7 @@ Untuk game memerlukan function jadi gua gk kasi example dulu
 Example Case:
 
 case 'cewe_vietnam':
-     ini_result = await fetchJson(`https://api-alphabot.herokuapp.com/api/cewe/vietnam?apikey=Alphabot`)
+     ini_result = await fetchJson(`https://rest-api07.herokuapp.com/api/cewe/vietnam?apikey=Abhelbotz`)
      get_result = ini_result.result
         ini_img = await getBuffer(get_result.url)
      alpha.sendMessage(from, ini_img, image, {quoted:mek})
@@ -335,7 +334,7 @@ Example Case:
 case 'cari_film':
       if (args.length < 1) return reply(`Example : ${prefix + command} Avengers)
       query = args.join(" ")
-      get_result = await fetchJson(`https://api-alphabot.herokuapp.com/api/filmapik/search?film=${query}&apikey=Alphabot`)
+      get_result = await fetchJson(`https://rest-api07.herokuapp.com/api/filmapik/search?film=${query}&apikey=Abhelbotz`)
       for (var x = 0; x <= 1; x++) {
          ini_img = get_result[x].result.thumbnailPotrait
          ini_txt = `DATA BERHASIL DI TEMUKAN\n\n`
@@ -368,7 +367,7 @@ Example Case:
 case 'lk21_tahun': //mencari film lk21 berdasarkan tahun
       if (args.length < 1) return reply(`Usage : ${prefix + command} Tahun\nExample : ${prefix + command} 2021)
       query = args.join(" ")
-      get_result = await fetchJson(`https://api-alphabot.herokuapp.com/api/lk21/year?tahun=${query}&apikey=Alphabot`)
+      get_result = await fetchJson(`https://rest-api07.herokuapp.com/api/lk21/year?tahun=${query}&apikey=Abhelbotz`)
       for (var x = 0; x <= 1; x++) {
          ini_img = get_result[x].result.result.thumbnail
          ini_txt = `DATA BERHASIL DI TEMUKAN\n\n`
@@ -397,7 +396,7 @@ Example Case:
 case 'republika': 
       if (args.length < 1) return reply(`Usage : ${prefix + command} jenis berita\nExample : ${prefix + command} ekonomi)
       query = args.join(" ")
-      get_result = await fetchJson(`https://api-alphabot.herokuapp.com/api/news/republika?type=${query}&apikey=Alphabot`)
+      get_result = await fetchJson(`https://rest-api07.herokuapp.com/api/news/republika?type=${query}&apikey=Abhelbotz`)
       for (var x = 0; x <= 1; x++) {
          ini_txt = `DATA BERHASIL DI TEMUKAN\n\n`
          ini_txt += `Title : ${get_result[x].result.data.title}\n`
@@ -423,9 +422,9 @@ case 'republika':
 Example Case:
 
 case 'base64encode':
-      if (args.length < 1) return reply(`Usage : ${prefix + command} teks\nExample : ${prefix + command} zeeoneofc)
+      if (args.length < 1) return reply(`Usage : ${prefix + command} teks\nExample : ${prefix + command} sadistic)
       query = args.join(" ")
-      ini_result = await fetchJson(`https://api-alphabot.herokuapp.com/api/base?apikey=Alphabot&type=base64&encode=${query}`)
+      ini_result = await fetchJson(`https://rest-api07.herokuapp.com/api/base?apikey=Abhelbotz&type=base64&encode=${query}`)
       get_result = ini_result.result
          ini_txt = `Type : ${get_result.type}\n`
          ini_txt += `String : ${get_result.string}\n`
@@ -445,7 +444,7 @@ case 'base64encode':
 Example Case:
 
 case 'covid_word':
-     ini_result = await fetchJson('https://api-alphabot.herokuapp.com/api/covidworld?apikey=Alphabot')
+     ini_result = await fetchJson('https://rest-api07.herokuapp.com/api/covidworld?apikey=Abhelbotz')
      get_result = ini_result.result
         ini_txt = `C O V I D  W O R L D`
         ini_txt += `Total Case : ${get_result.totalCases}\n`
@@ -461,9 +460,12 @@ case 'covid_word':
 
 ## ```coffee ☕```
 
-- [`SAWERIA`](https://saweria.co/zeeoneofc)
+- [`SAWERIA`](https://saweria.co/Abhelfams)
 
 ## ```Thnaks To```
 
-- [`Zahir`]()
-- [`Hads`]()
+- [`Allah`]()
+- [`All mastah`]()
+- [`All creator`]()
+- [`SADISTIC BOTZ`]()
+- [`Abhelbotz`]()
